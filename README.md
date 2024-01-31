@@ -1,6 +1,4 @@
-# Desenvolve-oBoticario
-
----
+# Desenvolve oBoticario
 
 ## Overview
 Welcome to the repository for my learning journey in the "Desenvolve" program by oBoticário. This repository serves as a centralized space to organize and document my notes, projects, and insights throughout the course. The program, provided by Alura, unfolds weekly, and this documentation will help keep track of my progress and achievements.
