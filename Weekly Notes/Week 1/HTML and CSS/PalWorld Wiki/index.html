@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palworld's Wiki</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#welcome">
+                <figure class="header-logo img-container">
+                    <img src="./images/logo.png" alt="Palworld's Logo">
+                </figure>
+            </a>
+            <div class="header-menu">
+                <nav>
+                    <ul class="header-menu-nav">
+                        <li>
+                            <a href="#welcome">
+                                Home
+                            </a>
+                        </li>
+                        <li>Pals</li>
+                        <li>Map</li>
+                        <li>
+                            <!-- Não é mais utilizado -->
+                            <a href="javascript:alert('Hello World!');" accesskey="p">
+                                Acess Key
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="header-menu-searchbar">
+                    <input placeholder="Try to search a Pal, Map area..."> 
+                    <figure class="header-menu-searchbar-icon img-container">
+                        <img alt="Search icon" src="./images/search.svg">
+                    </figure>           
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-container home-welcome" id="home">
+            <div class="home-text">
+                <h1>Palworld: Your new Adventure game</h1>
+                <p>Palworld seamlessly integrates elements of battle, monster-capturing, training, and base building.</p>
+                <button class="home-button">Now More</button>
+            </div>
+            <figure class="home-image img-container">
+                <img src="./images/home.png">
+            </figure>
+        </div>
+        <div class="home-container home-pals" id="pals">
+            <h2 class="home-pals-title" draggable="true">PALS</h2>
+            <div class="home-pals-section">
+                <div class="home-pal-container">
+
+                </div>
+                <div class="home-pal-container">
+
+                </div>
+                <div class="home-pal-container">
+
+                </div>
+                <div class="home-pal-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text" contenteditable="true" data-test="true" dir="rtl" >@Pocketpair inc</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra-Cabeça</title>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("imageId", ev.target.id);
+            ev.dataTransfer.setData("containerId", ev.target.parentElement.id);
+        }
+          
+        function drop(ev) {
+            allowDrop(ev);
+            
+            const previousImageId = ev.dataTransfer.getData("imageId");
+            const previousContainerId = ev.dataTransfer.getData("containerId");
+
+            const previousImage =  document.getElementById(previousImageId);
+            const currentImage = document.getElementById(ev.target.id);
+
+            const previousContainer = document.getElementById(previousContainerId);
+            const currentContainer = document.getElementById(ev.target.parentElement.id);
+
+            previousContainer.innerHTML = "";
+            previousContainer.appendChild(currentImage);
+
+            currentContainer.innerHTML = "";
+            currentContainer.appendChild(previousImage);
+        }
+    </script>
+    <style>
+        img{
+            width: 342px;
+            height: 191px;
+        }
+        .peca {
+            width: 342px;
+            height: 191px;
+            border: 1px solid black;
+        }
+        .linha {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="linha">
+        <div class="peca" id="peca1" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem1" src="./images/A-viagem-de-Chihiro (0_0).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca2" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem2" src="./images/A-viagem-de-Chihiro (0_1).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca3" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem3" src="./images/A-viagem-de-Chihiro (0_2).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+    </div>
+    <div class="linha">
+        <div class="peca" id="peca4" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem4" src="./images/A-viagem-de-Chihiro (1_0).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca5" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem5" src="./images/A-viagem-de-Chihiro (1_1).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca6" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem6" src="./images/A-viagem-de-Chihiro (1_2).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+    </div>
+    <div class="linha">
+        <div class="peca" id="peca7" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem7" src="./images/A-viagem-de-Chihiro (2_0).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca8" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem8" src="./images/A-viagem-de-Chihiro (2_1).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+        <div class="peca" id="peca9" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="imagem9" src="./images/A-viagem-de-Chihiro (2_2).webp" draggable="true" ondragstart="drag(event)" >
+        </div>
+    </div>
+</body>
+</html>
