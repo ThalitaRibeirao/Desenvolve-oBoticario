@@ -1,0 +1,111 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+/* Reset CSS */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+/* Styling */
+
+body {
+    margin: 80px 200px;
+    background-color: rgba(233,150,122, 0.5);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-underline-offset: 10px;
+    margin-bottom: 120px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.exercise__container {
+    margin-bottom: 60px;
+}
+
+.exercise {
+    background-color: white;
+    padding: 60px;
+    margin-top: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.exercise__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exercise > p {
+    position: absolute;
+    z-index: 2;
+    font-size: 32px;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 25%;
+    left: 25%;
+    rotate: -15deg;
+    opacity: 50%;
+}
+
+.exercise__content__aligment {
+    flex-direction: column;
+}
+
+.exercise__content__gap {
+    gap: 16px;
+}
+
+.exercise__content__subtitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:magenta;
+    text-align: center;
+    font-size: 16px;
+}
+
+.exercise__content__subtitle::before,
+.exercise__content__subtitle::after {
+    content: '💗';
+}
+
+.exercise__content__button__style a {
+    background-color: pink;
+    color: black;
+    width: 200px;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    transition: 2s;
+    font-weight: bold;
+}
