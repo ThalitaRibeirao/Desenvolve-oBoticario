@@ -1,0 +1,69 @@
+/* based on values */
+a[target="_blank"] { 
+    color: red;
+}
+/* adjacent brother: style the element that comes 
+    immediatly after the first
+*/
+h2 + p {
+    color: green;
+}
+/* General brother: style all elements after the first */
+h2 ~ p {
+    color: green;
+}
+/* Direct son */
+div > p {
+    color: blue;
+}
+/* Descendant combiner - general son */
+div p {
+    color: blue;
+}
+
+/*************************************/
+/********** PSEUDOCLASS **************/
+/*************************************/
+
+/* Select based on brother's position */
+li:nth-child(2) {
+    color: red;
+}
+/*
+    <ul>
+        <li>Este item não será afetado.</li>
+        <li>Este item será vermelho.</li>
+        <li>Este item não será afetado.</li>
+    </ul>
+*/
+div:not(.classe) {
+    color: blue;
+}
+button:hover {
+    background-color: yellow;
+}
+/* Add some content before*/
+p:before {
+    content: "Coramila: ";
+}
+/* Check if has a element inside of it */
+div:has(p) {
+    border: 1px solid black;
+}
+/* Select elements that does not have son */
+div:empty {
+    display: none;
+}
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: red;
+}
+/* Search a list of selectors and return the first match */
+p:is(.grifinoria, .luffaluffa) {
+    color: blue;
+}
+ul li:only-child {
+    color: green;
+}

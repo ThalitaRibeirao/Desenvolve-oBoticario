@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box
 }
+html, body {
+    height: 100%;
+}
 img {
     width: 100%;
 }
@@ -45,20 +48,21 @@ header {
 .header-logo {
     width: 150px;
 }
-.header-menu-nav {
+.header-menu-nav, .header-menu-nav a {
     align-items: center;
-    color: #ffffff;
+    color: #ffffff!important;
     display: flex;
     flex-direction: row;
     font-size: 14px;
     font-weight: 600;
     gap: 32px;
     list-style: none;
+    text-decoration: none;
 }
-.header-menu-nav li {
+.header-menu-nav li, .header-logo{
     transition: 0.2s;
 }
-.header-menu-nav li:hover{
+.header-menu-nav li:hover, .header-logo:hover{
     opacity: 50%;
     text-decoration: underline;
 }
@@ -93,6 +97,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: calc(100% - 65px);
 }
 .home-container {
     margin: 70px 0px;
@@ -143,21 +148,6 @@ header {
     right: 40px;
     top: 40px;
     width: 630px;
-}
-.home-pals-section {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 16px;
-}
-.home-pal-container{
-    width: 300px;
-    height: 400px;
-    background-color:#0D0C19;
-    border-radius: 16px;
-}
-.home-pals-title {
-    font-family: "Poppins";
 }
 
 /* Footer */

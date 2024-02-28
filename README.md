@@ -12,7 +12,7 @@ The "Desenvolve" program covers a comprehensive range of topics in the field of 
 For more information, check <a>the schedule </a>
 
 ## How to Navigate
-- Weekly Notes: Find detailed notes for each week's lessons in the respective folders.
+- Notes: Find detailed notes for each course in the respective folders.
 - Projects: Explore the projects I've worked on during the program.
 - Resources: Access essential course materials and other helpful resources.
 

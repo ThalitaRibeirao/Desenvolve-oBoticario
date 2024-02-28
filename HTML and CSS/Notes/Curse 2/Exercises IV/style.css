@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    margin: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.pinimg.com/originals/b4/59/26/b4592635d6855ea30e1d652b846fb3df.jpg');
+}
+h1 {
+    color: white;
+}
+p {
+    font-size: 16px;
+}
+.exercise {
+    background-color: white;
+    border-radius: 32px;
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 32px 64px;
+}
+.exercise__buttons, 
+.exercise__buttons__visibility,
+.exercise__buttons__style,
+.exercise__buttons__sizing,
+.exercise__buttons__fonts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+.exercise__buttons__visibility > button,
+.exercise__buttons__style > button,
+.exercise__buttons__sizing > button,
+.exercise__buttons__fonts > button {
+    font-size: 20px;
+    color: #f5565e;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.exercise__buttons__style > button,
+.exercise__buttons__sizing > button,
+.exercise__buttons__fonts > button {
+    background-color: #5ED5CF;
+    border: none;
+    border-radius: 32px;
+}
+
+.exercise__buttons__sizing > button,
+.exercise__buttons__fonts > button {
+    padding: 16px 32px;
+}
+
+.exercise__buttons__fonts > button{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
