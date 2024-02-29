@@ -16,7 +16,6 @@ body{
 }
 
 /* Styling */
-
 body {
     margin: 80px 200px;
     background-color: rgba(233,150,122, 0.5);
@@ -46,11 +45,20 @@ p {
     font-weight: 500;
 }
 
-.exercise__container {
-    margin-bottom: 60px;
+.content {
+    max-width: 600px;
+    margin: auto;
 }
 
 .exercise {
+    margin-bottom: 60px;
+}
+
+.exercise__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     padding: 60px;
     margin-top: 24px;
@@ -58,23 +66,16 @@ p {
     overflow: hidden;
 }
 
-.exercise__content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.exercise > p {
+.exercise__content::before {
+    content:'Meu site incrível!!!';
     position: absolute;
     z-index: 2;
     font-size: 32px;
     color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    top: 25%;
+    top: calc(25% + 50px);
     left: 25%;
-    rotate: -15deg;
+    rotate: -30deg;
     opacity: 50%;
 }
 
